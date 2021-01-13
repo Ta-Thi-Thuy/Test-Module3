@@ -38,7 +38,7 @@ class AgencyController extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function store(CreateExampleRequest $request)
+    public function store(Request $request)
     {
         $agency = new Agency();
         $agency->id = $request->input('id');

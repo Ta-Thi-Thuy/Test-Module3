@@ -28,7 +28,6 @@
 <body>
 
 <div class="container">
-<form class="row g-3">
 
 <div class="col-12 col-md-12">
         <div class="row">
@@ -43,57 +42,33 @@
                     <div class="form-group">
                         <label>Mã số đại lý </label>
                         <input type="number" class="form-control" name="id" placeholder="Nhập mã số">
-                        @if($errors->any())
-                            <div class=" alert-danger">
-                                {{$errors->first('id')}}
-                            </div>
-                        @endif
+
                     </div>
 
                     <div class="form-group">
                         <label>Tên đại lý </label>
                         <input type="text" class="form-control" name="name" placeholder="Nhập tên">
-                        @if($errors->any())
-                            <div class=" alert-danger">
-                                {{$errors->first('name')}}
-                            </div>
-                        @endif
+
                     </div>
                     <div class="form-group">
                         <label>Điện thoại </label>
                         <input type="number" class="form-control" name="phone" placeholder="Nhập số điện thoại">
-                        @if($errors->any())
-                            <div class=" alert-danger">
-                                {{$errors->first('phone')}}
-                            </div>
-                        @endif
+
                     </div>
                     <div class="form-group">
                         <label>Email</label>
                         <input type="email" class="form-control" name="email" placeholder="Nhập email">
-                        @if($errors->any())
-                            <div class=" alert-danger">
-                                {{$errors->first('email')}}
-                            </div>
-                        @endif
+
                     </div>
                     <div class="form-group">
                         <label>Địa chỉ </label>
                         <input type="text" class="form-control" name="address" placeholder="Nhập địa chỉ">
-                        @if($errors->any())
-                            <div class=" alert-danger">
-                                {{$errors->first('address')}}
-                            </div>
-                        @endif
+
                     </div>
                     <div class="form-group">
                         <label>Tên người quản lý</label>
                         <input type="text" class="form-control" name="managerName" placeholder="Nhập tên người quản lý">
-                        @if($errors->any())
-                            <div class=" alert-danger">
-                                {{$errors->first('managerName')}}
-                            </div>
-                        @endif
+
                     </div>
                     <div class="form-group">
                         <label>Trạng thái</label>
@@ -107,12 +82,11 @@
                     <button type="submit" class="btn btn-primary">Thêm mới</button>
                     <button class="btn btn-secondary" onclick="window.history.go(-1); return false;">Hủy</button>
                 </form>
-
             </div>
 
         </div>
     </div>
-</form>
+
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
